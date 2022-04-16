@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+.navbar{
+    box-shadow: 0 1vh 2vh 0 rgba(36, 34, 34, 0.185);
+
+}
+.nav-link::after {
+    content: none !important;
+}
+.nav-link{
+    letter-spacing: 0.2rem;
+    position: relative;
+    color: black !important;
+}
+.nav-link:hover{
+    color: grey !important;
+    
+}
+.nav-link:before{
+    content:'';
+    display: block;
+    height: 3px;
+    background:grey;
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    right:0;
+    transform:scale(0,1);
+    transition: transform ease-in-out 450ms;
+}
+.nav-link:hover::before{
+    transform: scale(1,1);
+}
+.navbar-brand{
+    width: 90px;
+    height: 80px;
+    color: black;
+    font-size: 100px;
+}
+
+.nav-item{
+    padding-right: 2vw;
+}
+
+.navbar-nav{
+    padding-right: 2vw;
+}
+.dropdown-item:hover{
+    color:white !important;
+    background-color: black !important;
+}
+ .bg-image{
+    height: 100vh;
+    padding-top: 100px;
+    /* background-image: url("images/pexels-maria-orlova-4946388.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     
+}
+.intro{
+    margin-top: 15vh;
+    width:30vw;
+    height: 70vh;
+    text-align: center;
+    padding-top: 7vh;
+}
+.introh{
+    color: rgb(0, 0, 0);
+    font-family:'Caveat', cursive;
+    font-size: 6ch;
+    
+}
+.pageline{
+    width: 80vw;
+    color: rgba(0, 0, 255, 0.678);
+    margin:2vh 10vw;
+    
+    
+}
+.outercontent{
+    margin: 1vh 10vw;
+    margin-top: 3vh;
+}
+.content1{
+    text-align: center;
+    width: 15vw;
+    
+}
+
+.content2{
+    text-align: center;
+    width: 15vw; 
+    background-color:rgba(255, 248, 220, 0.329);
+    /* border-radius: 5px; */
+    width:40vw;
+    height: 70vh;
+    padding-top: 6%; 
+    /* box-shadow: 9px 9px 22px grey; */
+}
+.signupbtn{
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    margin-top: 1vh;
+    padding: 1.5vh 1.5vw;
+    background: black;
+    transition: background 0.3s ease-in-out;
+}
+
+.signupbtn:hover {
+    background: white;
+    color:black;
+}
+
+
+.page{
+    margin-top: 7vh;
+    background-image: url("images/pexels-maria-orlova-4946388.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw; 
+
+}
+.pageforsignup{
+    margin-top: 4vh;
+    background-image: url("images/pexels-maria-orlova-4946388.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw; 
+
+}
+/* .row{
+    background-color:rgba(255, 248, 220, 0.329);
+    border-radius:10px;
+    box-shadow: 12px 12px 22px grey;
+} */
+
+.formfill{
+    margin-top: 12vh;
+    height: 25vh;
+}
+.formfill2{
+    margin-top: 15vh;
+}
+.registerbtn{
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    padding: 10px 50px; 
+    transition: background 0.5s ease-in-out;
+    /* transition: color 0.3s ease-in-out; */
+
+}
+.registerbtn:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+.loginlink{
+    text-decoration: none;
+    color:black;
+    
+}
+.loginbtn{
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    padding: 10px 50px;
+    /* margin-left: 5vw;  */
+    transition: background 0.3s ease-in-out;
+}
+.loginbtn:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+.registerlink{
+    text-decoration: none;
+    color: black;
+}
+
+.glass{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(75, 76, 87, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.mar {
+    margin-top: 15vh;
+}
+.adoptionform{ 
+    box-shadow: 0 7px 7px 7px rgba(128, 128, 128, 0.596);
+    border-radius: 5px; 
+    margin-top: 20vh;
+    padding: 6vh 10vw;
+    
+    
+}
+.submitbtn{
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    padding: 10px 50px;
+    transition: background 0.5s ease-in-out;
+}
+.submitbtn:hover{
+    background-color: white;
+    border-color: white;
+    color: black; 
+
+}
+.card-img-top{
+    width: 100%;
+    height: 36vh;
+    object-fit: cover;
+}
+.card{
+    margin-top: 5vh;
+}
+
+
+

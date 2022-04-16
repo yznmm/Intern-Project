@@ -1,0 +1,36 @@
+{% extends "jangsaapp/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid page ">
+    <div class="container formfill2 py-5">
+        <div class="row glass ">  
+            <div class="col-lg-5"> 
+                <img  class="image-fluid" src="{% static 'jangsaapp/images/man-1801309.svg'%}" style="size: 70px;">
+            </div> 
+            <div class="col-lg-6 pt-5 text-center">
+                <h6 style="font-weight: bold;">Login</h6>
+                <p class="text-danger">{{message}}</p> 
+                <form action="" method="POST"> 
+                    {% csrf_token %} 
+                        <div class="input-group"> 
+                            <input class="form-control my-2 p-2 mt-1 offset-md-2" type="text" placeholder="Username" name="Username" required>
+                            <div class="invalid-feedback">
+                                Please enter your correct username.
+                            </div>
+                        </div> 
+                        <div class="input-group">
+                            <input class="form-control my-2 p-2 mt-1 offset-md-2" type="password" placeholder="Password" name="pwd" required> 
+                            <div class="invalid-feedback"> 
+                                Incorrect password. Try again. 
+                            </div>
+                        </div>
+                            <button class=" loginbtn mt-3" type="button">Sign in</button> 
+                    <p class="ctn mt-2">Don't have an account?<a class="registerlink" href="{% url 'signup' %}"> Register Here</a></p>
+                </form>
+            </div> 
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends "jangsaapp/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container intro">
+  <h1 class="introh"">Jangsa Animal Adoption</h1>
+  <div class="row mt-5">
+    <div class="col">
+      <img src="{%static 'jangsaapp/images/mountains-1412683.svg'%}">
+    </div>
+    <div class="col">
+      <img src="{%static 'jangsaapp/images/mountains-1412683.svg'%}">
+    </div>
+    <div class="col">
+      <img src="{%static 'jangsaapp/images/mountains-1412683.svg'%}">
+    </div>
+  </div>
+  <p style="margin-top: 5vh;">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Voluptatem tempora necessitatibus consectetur dolores nostrum molestias
+    fuga deserunt impedit repellat rerum. Lorem ipsum dolor sit amet consectetur 
+    adipisicing elit. Dolor debitis atque error, accusamus commodi iste quisquam 
+    magnam iusto. Provident, itaque. 
+  </p>
+</div>
+<hr class="pageline">
+<div class="container outercontent mt-5">
+  <div class="row">
+    <div class="col content1">
+      <img src="{%static 'jangsaapp/images/mountains-1412683.svg'%}">
+      <h6 style="margin-top: 2vh;">Shelter Animals For Adoption</h6> 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, quo.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, cupiditate.
+        </p>
+    </div>
+    <div class="col content2 ">
+      <img src="{% static 'jangsaapp/images/puppy-32025.svg' %}" style="width: 90px;">
+      <h6>Rescue Shelter Animal</h6>
+       <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, hic.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, architecto! 
+       </p> 
+    </div>
+  </div> 
+</div>
+
+    <div class="mt-0 p-4 bg-dark text-white text-center">
+      <p> &copy; Jangsa Animal Adoption, 2022</p> 
+    </div>
+
+{% endblock content %}
+ 

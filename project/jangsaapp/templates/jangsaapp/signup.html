@@ -1,0 +1,65 @@
+{% extends "jangsaapp/base.html" %}
+{% load static %}
+{% block content %}
+
+    <div class="container-fluid pageforsignup">
+            <div class="container formfill py-5">
+                <div class="row glass">  
+                    <div class="col-lg-5"> 
+                        <img  class="image-fluid mt-5" src="{% static 'jangsaapp/images/man-1801309.svg'%}" style="size: 70px;">
+                    </div>
+                    <div class="col-lg-6 pt-2 text-center">
+                        <h6 style="font-weight: bold;">Create Account</h6>
+                        <!-- <p class="text-danger">{{message}}</p> -->
+                        <form action="" method="POST" class="needs-validation" novalidate>
+                            {% csrf_token %} 
+                                <div class="input-group">
+                                    <input class="form-control my-2 p-2 mt-2 offset-md-2" type="text" id="ValidationFullName" placeholder="Full name" name="full name" required> 
+                                    {{form.fullname}} 
+                                    <div class="invalid-feedback">
+                                        Please enter your full name. 
+                                    </div>
+                                </div> 
+                                <div class="input-group">
+                                    <input class="form-control my-2 p-2 mt-1 offset-md-2" type="text" placeholder="Username" name="Username" required>
+                                    {{form.username}}
+                                    <div class="invalid-feedback">
+                                        Please enter a valid username. 
+                                    </div>
+                                </div> 
+                                <div class="input-group"> 
+                                    <input class="form-control my-2 p-2 mt-1 offset-md-2" type="number" placeholder="Phone Number" name="Phone Number" required>
+                                    {{form.phone_number}} 
+                                    <div class="invalid-feedback">
+                                        Please enter a valid phone number. 
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <input class="form-control my-2 p-2 mt-1 offset-md-2" type="email" placeholder="Email Address" name="Email Address" required>
+                                    {{form.email}}
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address. 
+                                    </div>
+                                </div> 
+                                <div class="input-group">
+                                    <input class="form-control my-2 p-2 mt-1 offset-md-2" type="password" placeholder="Password" name="pwd" id="pwd" required> 
+                                    {{form.password}}
+                                    <div class="invalid-feedback">
+                                        Please enter password. 
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <input class="form-control my-2 p-2 mt-1 offset-md-2" type="password" placeholder="Confirm password" name="pwd2" id="pwd" required>
+                                    {{form.password}} 
+                                    <div class="invalid-feedback">
+                                        Please confirm password. 
+                                    </div> 
+                                </div>
+                                    <button class=" registerbtn mt-1" type="button">Sign up</button> 
+                            <p class="ctn">Already have an account? <a class="loginlink" href="{% url 'signin' %}"> Sign in here</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+    </div>
+{% endblock content %}
